@@ -10,7 +10,7 @@ function ForecastSummary({ date, description, icon, temperature, onSelect }) {
         {moment(date).format("ddd Do MMM")}
       </div>
       <div className="forecast-summary__icon" data-testid="forecast-icon">
-        <WeatherIcon name="owm" iconId={icon} />
+        <WeatherIcon name="owm" iconId={icon.toString()} />
       </div>
       <div className="forecast-summary__temperature">
         {temperature.max}

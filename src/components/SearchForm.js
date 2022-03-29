@@ -11,7 +11,7 @@ function SearchForm({ searchText, setSearchText, onSubmit }) {
         type="text"
         onChange={handleInputChange}
         value={searchText}
-        className="Input"
+        className="search-input"
       />
       <button type="submit" onClick={onSubmit}>
         Search
